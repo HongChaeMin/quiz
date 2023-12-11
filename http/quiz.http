@@ -1,0 +1,32 @@
+### Find all
+GET {{backend_api}}/quizzes
+
+### Find by id
+GET {{backend_api}}/quizzes/1
+
+### Find by chapter id
+GET {{backend_api}}/chapters/1/quizzes
+
+### Create
+POST {{backend_api}}/chapters/1/quizzes
+Content-Type: application/json
+
+{
+  "question": "What is the capital of France?",
+  "choose": "1. Paris 2. London 3. Berlin 4. Rome",
+  "answer": "1. Paris"
+}
+
+### Update
+PATCH {{backend_api}}/quizzes/1
+Content-Type: application/json
+
+{
+  "question": "What is the capital of France?",
+  "choose": "1. Paris 2. London 3. Berlin 4. Rome",
+  "answer": "1. Paris"
+}
+
+### Delete
+DELETE {{backend_api}}/quizzes/1
+

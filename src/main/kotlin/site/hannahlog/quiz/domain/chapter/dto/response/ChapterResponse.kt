@@ -10,13 +10,6 @@ data class ChapterResponse(
     val modifiedDate: LocalDateTime,
 )
 
-fun Chapter.toListResponse(): ChapterResponse = ChapterResponse(
-    id = this.id,
-    title = this.title,
-    createdDate = this.createdDate,
-    modifiedDate = this.modifiedDate,
-)
-
 fun Chapter.toResponse(): ChapterResponse = ChapterResponse(
     id = this.id,
     title = this.title,

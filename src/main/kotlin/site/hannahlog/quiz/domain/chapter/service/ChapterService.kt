@@ -4,7 +4,6 @@ import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 import site.hannahlog.quiz.domain.chapter.dto.request.ChapterRequest
 import site.hannahlog.quiz.domain.chapter.dto.response.ChapterResponse
-import site.hannahlog.quiz.domain.chapter.dto.response.toListResponse
 import site.hannahlog.quiz.domain.chapter.dto.response.toResponse
 import site.hannahlog.quiz.domain.chapter.entity.Chapter
 import site.hannahlog.quiz.domain.chapter.repository.ChapterRepository
@@ -18,7 +17,7 @@ class ChapterService(
 
     fun findAll(): List<ChapterResponse> = chapterRepository
         .findAllByDeletedDateIsNull()
-        .map { it.toListResponse() }
+        .map { it.toResponse() }
 
     fun findOne(id: Long): ChapterResponse {
         val chapter = chapterRepository

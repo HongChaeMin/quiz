@@ -1,7 +1,6 @@
 package site.hannahlog.quiz.domain.chapter.controller
 
 import jakarta.validation.Valid
-import org.springframework.data.repository.query.Param
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PatchMapping
