@@ -8,7 +8,7 @@ plugins {
     kotlin("plugin.jpa") version "1.9.20"
 }
 
-group = "site.hannsh-log"
+group = "site.hannah-log"
 version = "0.0.1-SNAPSHOT"
 
 java {
@@ -25,6 +25,8 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
+    implementation("io.github.microutils:kotlin-logging-jvm:3.0.5")
+    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
