@@ -1,0 +1,25 @@
+### Find all
+GET {{backend_api}}/chapters
+
+### Find one
+GET {{backend_api}}/chapters/1
+
+### Create
+POST {{backend_api}}/chapters
+Content-Type: application/json
+
+{
+  "title": "Chapter 1"
+}
+
+### Update
+PATCH {{backend_api}}/chapters/1
+Content-Type: application/json
+
+{
+  "title": "Chapter 1 update"
+}
+
+### Delete
+DELETE {{backend_api}}/chapters/1
+
